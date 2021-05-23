@@ -1,0 +1,240 @@
+<!--#include virtual="/parts/header.html" -->
+
+<main class="pt-3 pb-3">
+  <div class="container">
+    <!--#include virtual="/parts/breadcrumb.html" -->
+    <h1 class="text-center">Подача статьи на публикацию в журнале</h1>
+    <form class="row needs-validation" novalidate>
+      <div class="col-md-6 col-xs-12 mt-3">
+        <div class="card">
+          <div class="card-header">Укажите тему публикацию на 3х языках</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="articleRu" class="form-label">Тема работы рус.</label>
+              <textarea
+                class="form-control"
+                id="articleRu"
+                placeholder="Введите тему вашей работы рус."
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="articleKZ" class="form-label">Тема работы каз.</label>
+              <textarea
+                class="form-control"
+                placeholder="Введите тему вашей работы каз."
+                id="articleKZ"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="articleEng" class="form-label"
+                >Тема работы англ.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Введите тему вашей работы англ."
+                id="articleEng"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 mt-3">
+        <div class="card">
+          <div class="card-header">Укажите аннотацию на 3х языках</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="annotationRu" class="form-label"
+                >Аннотация рус.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Аннотация к вашей статье рус."
+                id="annotationRu"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="annotationKZ" class="form-label"
+                >Аннотация каз.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Аннотация к вашей статье каз."
+                id="annotationKZ"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="annotationEng" class="form-label"
+                >Аннотация англ.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Аннотация к вашей статье англ."
+                id="annotationEng"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 mt-3">
+        <div class="card">
+          <div class="card-header">Укажите ключевые слова на 3х языках</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="keyWordsRu" class="form-label"
+                >Ключевые слова рус.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Укажите ключевые слова"
+                id="keyWordsRu"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+              <div class="form-text">
+                Укажите ключевые слова через точку с запятой, например:
+                информаьтка; программирование
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="keyWordsKZ" class="form-label"
+                >Ключевые слова каз.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Укажите ключевые слова"
+                id="keyWordsKZ"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+              <div class="form-text">
+                Укажите ключевые слова через точку с запятой, например:
+                информаьтка; программирование
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="keyWordsEng" class="form-label"
+                >Ключевые слова англ.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Укажите ключевые слова"
+                id="keyWordsEng"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+              <div class="form-text">
+                Укажите ключевые слова через точку с запятой, например:
+                информаьтка; программирование
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <select class="form-select" required aria-label="select example">
+                <option value="">Выберите Категорию</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="invalid-feedback">
+                Example invalid select feedback
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="orfanization" class="form-label"
+                >Организация автора:</label
+              >
+              <input
+                type="orfanization"
+                class="form-control"
+                id="orfanization"
+                placeholder="Введите организаццию"
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Введите Email"
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Телефон:</label>
+              <input
+                type="phone"
+                class="form-control"
+                id="phone"
+                placeholder="Введите телефон"
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="article-file">Статья</label>
+              <input
+                type="file"
+                class="form-control"
+                id="article-file"
+                placeholder="Прикрепите статью"
+                accept=".doc,.docx"
+                required
+              />
+              <div class="invalid-feedback">Необходимо прикрепить</div>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="receipt">Чек</label>
+              <input
+                type="file"
+                class="form-control"
+                id="receipt"
+                placeholder="Прикрепите чек"
+                accept="image/*"
+                required
+              />
+              <div class="invalid-feedback">Необходимо прикрепить</div>
+            </div>
+            <div class="mb-3">
+              <label for="comment" class="form-label"
+                >Ключевые слова англ.</label
+              >
+              <textarea
+                class="form-control"
+                placeholder="Комментарии для редакции"
+                id="comment"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <button class="btn btn-primary" type="submit">
+          Отправить в журнал
+        </button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!--#include virtual="/parts/footer.html" -->

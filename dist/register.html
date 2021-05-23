@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light"
+        style="background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О журнале</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Редакция</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Авторы</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Архив</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Akzhol
+              </button>
+              <ul
+                class="
+                  dropdown-menu dropdown-menu-sm-start dropdown-menu-md-end
+                "
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a class="dropdown-item" href="../article-form.html"
+                    >Подать стаью</a
+                  >
+                </li>
+                <li><a class="dropdown-item active" href="#">Мои статьи</a></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <a href="../login.html" type="button" class="btn btn btn-primary"
+                >Войти</a
+              >
+
+              <a href="../register.html" type="button" class="btn btn"
+                >Регистрация</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+
+
+<main class="pt-3">
+  <div class="container">
+    <h1 class="text-center">Регистрация</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8 col-md-4">
+          <form class="row needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Введите Email"
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="password1" class="form-label">Пароль:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password1"
+                placeholder="Введите Пароль"
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="password2" class="form-label"
+                >Повторите пароль:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="password2"
+                placeholder="Введите Пароль "
+                required
+              />
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
