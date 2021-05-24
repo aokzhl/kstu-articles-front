@@ -6,7 +6,14 @@ import "bootstrap";
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
+function truncate(str, n) {
+  return str.length > n ? str.substr(0, n - 1) + "..." : str;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  // const tds = document.querySelectorAll("td");
+  // tds.forEach((td) => (td.textContent = truncate(td.textContent, 20)));
+
   function passwordConfirm() {
     debugger;
     const password1 = document.querySelector("#password1");
@@ -60,4 +67,38 @@ document.addEventListener("DOMContentLoaded", () => {
       false
     );
   });
+
+  const form = document.querySelector("form");
+  const modalCloseBtns = document.querySelectorAll(
+    "button[data-bs-dismiss=modal]"
+  );
+  const modalOpenBtns = document.querySelectorAll(
+    "button[data-bs-toggle=modal]"
+  );
+  if (form && modalCloseBtns.length && modalOpenBtns.length)
+    modalOpenBtns.forEach((el) => {
+      if (hiidenId) {
+        el.addEventListener("click", (e) => {
+          hiidenId.value = e.target.dataset.id;
+          console.log(e);
+        });
+      }
+    });
+  modalCloseBtns.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      if (hiidenId) {
+        hiidenId.value = null;
+        console.log("close");
+        form.reset();
+      }
+    });
+  });
+  const hiidenId = document.querySelector("input[type=hidden]");
+
+  console.log(
+    modalCloseBtns,
+    modalOpenBtns,
+    hiidenId,
+    document.querySelectorAll("article").length
+  );
 });

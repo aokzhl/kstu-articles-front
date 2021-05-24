@@ -1,0 +1,90 @@
+<!--#include virtual="/parts/header.html" -->
+
+<main class="pt-3 pb-3">
+  <div class="container">
+    <!--#include virtual="/parts/breadcrumb.html" -->
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button data-id="id" class="btn btn-info ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Прикрепить отчет
+      </button>
+      
+    </div>
+    <div class="card mt-3">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</main>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Внесение решения</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xs-12">
+              <form class="row needs-validation" novalidate>
+                <input type="hidden" value="article_id" name="article_id" />
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="receipt"
+                    >Антиплагиат</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="receipt"
+                    placeholder="Прикрепите антиплагиат"
+                    required
+                  />
+                  <div class="invalid-feedback">Необходимо прикрепить</div>
+                </div>
+                <div class="col-xs-12">
+                  <button
+                    style="width: 100%"
+                    type="submit"
+                    class="btn mt-2 btn-primary"
+                  >
+                    Сохранить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button modal-action-close"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Отмена
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
