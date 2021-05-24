@@ -172,22 +172,42 @@
     <li class="breadcrumb-item active" aria-current="page">Data</li>
   </ol>
 </nav>
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <button data-id="id" class="btn btn-info ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Прикрепить отчет
-      </button>
-      
-    </div>
-    <div class="card mt-3">
-      <div class="card-header">
-        Featured
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card mt-3">
+          <div class="card-header">Автор: <b>А.А. Калинин</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Здесь будет название статьи</h5>
+            <form class="row needs-validation" novalidate>
+              <input type="hidden" value="article_id" name="article_id" />
+
+              <div class="input-group mb-3">
+                <input
+                  class="form-control"
+                  placeholder="Процент оригинальности"
+                />
+                <div class="invalid-feedback">Необходимо прикрепить</div>
+              </div>
+              <div class="mb-3">
+                <label for="receipt" class="form-label"
+                  >Отчет антиплагиата</label
+                >
+                <input type="file" class="form-control" id="receipt" required />
+                <div class="invalid-feedback">Необходимо прикрепить</div>
+              </div>
+              <div class="col-xs-12">
+                <button
+                  style="width: 100%"
+                  type="submit"
+                  class="btn mt-2 btn-primary"
+                >
+                  Сохранить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
     </div>
   </div>
 </main>
@@ -217,9 +237,6 @@
               <form class="row needs-validation" novalidate>
                 <input type="hidden" value="article_id" name="article_id" />
                 <div class="input-group mb-3">
-                  <label class="input-group-text" for="receipt"
-                    >Антиплагиат</label
-                  >
                   <input
                     type="file"
                     class="form-control"
@@ -257,6 +274,7 @@
 </div>
 
 	<script src="js/app.min.js"></script>
+	<script src="../admin/assets/js/core/jquery.min.js"></script>
 
 </body>
 </html>

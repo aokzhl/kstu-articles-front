@@ -28,7 +28,7 @@
   <div class="container">
     <!--#include virtual="/parts/breadcrumb.html" -->
     <div class="row justify-content-center">
-      <div class="col-12 col-md-4">
+      <div class="col-xs-12 col-md-4">
         <div class="card mt-3">
           <div class="card-header">Автор: <b>А.А. Калинин</b></div>
           <div class="card-body">
@@ -36,25 +36,20 @@
             <a href="#" class="btn btn-success my-2">Скачать статью</a>
 
             <form class="row needs-validation" novalidate>
+              <input type="hidden" value="article_id" name="article_id" />
+
               <div class="mb-3">
-                <input type="hidden" value="1500" name="article_id" />
-                <div class="reviewer-wrapper">
-                  <div class="reviewer">
-                    <p>
-                      asdsad
-                      <i
-                        style="cursor: pointer"
-                        class="far text-danger fa-times-circle"
-                      ></i>
-                    </p>
-                  </div>
-                </div>
-                <select class="form-select" aria-label="select example">
-                  <option value="">Выберать рецензентов</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <label for="receipt" class="form-label"
+                  >Загрузить обрезанную статью</label
+                >
+                <input
+                  accept=".doc,.docx"
+                  type="file"
+                  class="form-control"
+                  id="receipt"
+                  required
+                />
+                <div class="invalid-feedback">Необходимо прикрепить</div>
               </div>
               <div class="mb-3">
                 <select class="form-select" aria-label="select example">
@@ -64,7 +59,6 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-
               <div class="col-xs-12">
                 <button
                   style="width: 100%"
@@ -75,13 +69,17 @@
                 </button>
               </div>
             </form>
-            <button
-              class="btn btn-danger mt-2 w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#confirm-delete"
-            >
-              Отклонить
-            </button>
+            <div class="col-xs-12">
+              <button
+                style="width: 100%"
+                type="submit"
+                class="btn mt-2 btn-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#confirm-delete"
+              >
+                Удалить
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +91,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Отклонить статью?</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Удалить статью?</h5>
         <button
           type="button"
           class="btn-close"
@@ -105,9 +103,7 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Отмена
         </button>
-        <a type="button" href="delte/href/1" class="btn btn-danger"
-          >Отклонить</a
-        >
+        <a type="button" href="delte/href/1" class="btn btn-danger">Удалить</a>
       </div>
     </div>
   </div>

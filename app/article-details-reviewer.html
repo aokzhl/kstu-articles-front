@@ -1,69 +1,157 @@
 <!--#include virtual="/parts/header.html" -->
 
-<main class="pt-3 pb-3">
-  <div class="container">
-    <!--#include virtual="/parts/breadcrumb.html" -->
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+<!-- <main class="pt-3 pb-3">
+  <div class="container"> -->
+<!-- <div class="btn-group" role="group" aria-label="Basic mixed styles example">
       <button data-id="id" class="btn btn-info ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Внести решения
+        Действия
     </button>
+      <a href="/Отклонить" type="button" class="btn btn-danger ms-4" >
+        Отклонить
+    </a>
       
     </div>
     <div class="card mt-3">
       <div class="card-header">
-        Автор: <b>А.А. Калинин</b>
+        Featured
       </div>
       <div class="card-body">
-        <h5 class="card-title">Здесь будет название статьи</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="permission">
-          <label class="form-check-label" for="permission">
-            Разрешить публикацию
-          </label>
-        </div>
-        <button data-id="id" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Прикрепить отчет о рецензировании
-        </button>
-        <a href="#" class="btn btn-primary btn-block">Отправить</a>
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
     </div>
   </div>
-</main>
+</main> -->
+<main class="pt-3 pb-3">
+  <div class="container">
+    <!--#include virtual="/parts/breadcrumb.html" -->
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-md-4">
+        <div class="card mt-3">
+          <div class="card-header">Автор: <b>А.А. Калинин</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Здесь будет название статьи</h5>
+            <a href="#" class="btn btn-success my-2">Скачать статью</a>
+            <a href="#" class="btn btn-success my-2">Скачать форму рецензии</a>
 
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Внесение решения</h5>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></button>
-    </div>
-    <div class="modal-body">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-12">
             <form class="row needs-validation" novalidate>
               <input type="hidden" value="article_id" name="article_id" />
-              <div class="input-group mb-3">
+
+              <div class="mt-3 p-0">
+                <div class="card-header">
+                  <h4 class="text-center">
+                    <b>Ключевые слова на 3х языках</b>
+                  </h4>
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label for="keyWordsRu" class="form-label"
+                      >Ключевые слова рус.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Укажите ключевые слова"
+                      id="keyWordsRu"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="keyWordsKZ" class="form-label"
+                      >Ключевые слова каз.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Укажите ключевые слова"
+                      id="keyWordsKZ"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="keyWordsEng" class="form-label"
+                      >Ключевые слова англ.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Укажите ключевые слова"
+                      id="keyWordsEng"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 p-0">
+                <div class="card-header">
+                  <h4 class="text-center">
+                    <b>Аннотация на 3х языках</b>
+                  </h4>
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label for="annotationRu" class="form-label"
+                      >Аннотация рус.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Аннотация к вашей статье рус."
+                      id="annotationRu"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="annotationKZ" class="form-label"
+                      >Аннотация каз.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Аннотация к вашей статье каз."
+                      id="annotationKZ"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="annotationEng" class="form-label"
+                      >Аннотация англ.</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Аннотация к вашей статье англ."
+                      id="annotationEng"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">Необходимо заполнить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="receipt" class="form-label"
+                  >Загрузить рецензию</label
+                >
                 <input
+                  accept=".doc,.docx"
                   type="file"
                   class="form-control"
                   id="receipt"
-                  placeholder="Прикрепите антиплагиат"
                   required
                 />
                 <div class="invalid-feedback">Необходимо прикрепить</div>
+              </div>
+              <div class="form-check mb-3 ms-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Разрешить публикацию
+                </label>
               </div>
               <div class="col-xs-12">
                 <button
@@ -79,17 +167,7 @@
         </div>
       </div>
     </div>
-    <div class="modal-footer">
-      <button
-        type="button modal-action-close"
-        class="btn btn-secondary"
-        data-bs-dismiss="modal"
-      >
-        Отмена
-      </button>
-    </div>
   </div>
-</div>
-</div>
+</main>
 
 <!--#include virtual="/parts/footer.html" -->

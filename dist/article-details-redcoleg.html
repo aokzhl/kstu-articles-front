@@ -163,16 +163,9 @@
 </html>
 
 
-<main class="pt-3 pb-3">
-  <div class="container">
-    <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
-  </ol>
-</nav>
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+<!-- <main class="pt-3 pb-3">
+  <div class="container"> -->
+<!-- <div class="btn-group" role="group" aria-label="Basic mixed styles example">
       <button data-id="id" class="btn btn-info ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Действия
     </button>
@@ -193,76 +186,104 @@
     </div>
     </div>
   </div>
+</main> -->
+<main class="pt-3 pb-3">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card mt-3">
+          <div class="card-header">Автор: <b>А.А. Калинин</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Здесь будет название статьи</h5>
+            <a href="#" class="btn btn-success my-2">Скачать статью</a>
+
+            <form class="row needs-validation" novalidate>
+              <div class="mb-3">
+                <input type="hidden" value="1500" name="article_id" />
+                <div class="reviewer-wrapper">
+                  <div class="reviewer">
+                    <p>
+                      asdsad
+                      <i
+                        style="cursor: pointer"
+                        class="far text-danger fa-times-circle"
+                      ></i>
+                    </p>
+                  </div>
+                </div>
+                <select class="form-select" aria-label="select example">
+                  <option value="">Выберать рецензентов</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="select example">
+                  <option value="">Изменить статус</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12">
+                <button
+                  style="width: 100%"
+                  type="submit"
+                  class="btn mt-2 btn-primary"
+                >
+                  Сохранить
+                </button>
+              </div>
+            </form>
+            <button
+              class="btn btn-danger mt-2 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#confirm-delete"
+            >
+              Отклонить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="confirm-delete" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Действия</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Отклонить статью?</h5>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
-          aria-label="Close"
+          aria-label="Закрыть"
         ></button>
       </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xs-12">
-              <form class="row needs-validation" novalidate>
-                <div class="mb-3">
-                  <input type="hidden" value="article_id" name="article_id" />
-                  <select class="form-select" aria-label="select example">
-                    <option value="">Выберать рецензента</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <select class="form-select" aria-label="select example">
-                    <option value="">Изменить статус</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-xs-12">
-                  <button
-                    style="width: 100%"
-                    type="submit"
-                    class="btn mt-2 btn-primary"
-                  >
-                    Сохранить
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="modal-footer">
-        <button
-          type="button modal-action-close"
-          class="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Отмена
         </button>
+        <a type="button" href="delte/href/1" class="btn btn-danger"
+          >Отклонить</a
+        >
       </div>
     </div>
   </div>
 </div>
 
 	<script src="js/app.min.js"></script>
+	<script src="../admin/assets/js/core/jquery.min.js"></script>
 
 </body>
 </html>

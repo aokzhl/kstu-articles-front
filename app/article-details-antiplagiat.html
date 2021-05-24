@@ -3,22 +3,42 @@
 <main class="pt-3 pb-3">
   <div class="container">
     <!--#include virtual="/parts/breadcrumb.html" -->
-    <div class="row">
-      <div class="col-4 offset-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
         <div class="card mt-3">
-          <div class="card-header">
-            Автор: <b>А.А. Калинин</b>
-          </div>
+          <div class="card-header">Автор: <b>А.А. Калинин</b></div>
           <div class="card-body">
             <h5 class="card-title">Здесь будет название статьи</h5>
-            <input type="text" placeholder="Процент оригинальности" class="form-control my-2">
-            <button data-id="id" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Прикрепить отчет
-            </button>
-            <a href="#" class="btn btn-primary btn-block">Отправить</a>
+            <form class="row needs-validation" novalidate>
+              <input type="hidden" value="article_id" name="article_id" />
+
+              <div class="input-group mb-3">
+                <input
+                  class="form-control"
+                  placeholder="Процент оригинальности"
+                />
+                <div class="invalid-feedback">Необходимо прикрепить</div>
+              </div>
+              <div class="mb-3">
+                <label for="receipt" class="form-label"
+                  >Отчет антиплагиата</label
+                >
+                <input type="file" class="form-control" id="receipt" required />
+                <div class="invalid-feedback">Необходимо прикрепить</div>
+              </div>
+              <div class="col-xs-12">
+                <button
+                  style="width: 100%"
+                  type="submit"
+                  class="btn mt-2 btn-primary"
+                >
+                  Сохранить
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
 </main>
