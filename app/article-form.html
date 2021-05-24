@@ -4,14 +4,23 @@
   <div class="container">
     <!--#include virtual="/parts/breadcrumb.html" -->
     <h1 class="text-center">Подача статьи на публикацию в журнале</h1>
-    <form class="row needs-validation" novalidate>
+    <form
+      class="row needs-validation"
+      novalidate
+      action="./article-success.html"
+    >
       <div class="col-md-6 col-xs-12 mt-3">
         <div class="card">
-          <div class="card-header">Укажите тему публикацию на 3х языках</div>
+          <div class="card-header">
+            <h4 class="text-center">
+              <b>Укажите тему публикацию на 3х языках</b>
+            </h4>
+          </div>
           <div class="card-body">
             <div class="mb-3">
               <label for="articleRu" class="form-label">Тема работы рус.</label>
               <textarea
+                rows="4"
                 class="form-control"
                 id="articleRu"
                 placeholder="Введите тему вашей работы рус."
@@ -22,6 +31,7 @@
             <div class="mb-3">
               <label for="articleKZ" class="form-label">Тема работы каз.</label>
               <textarea
+                rows="4"
                 class="form-control"
                 placeholder="Введите тему вашей работы каз."
                 id="articleKZ"
@@ -34,6 +44,7 @@
                 >Тема работы англ.</label
               >
               <textarea
+                rows="4"
                 class="form-control"
                 placeholder="Введите тему вашей работы англ."
                 id="articleEng"
@@ -46,50 +57,11 @@
       </div>
       <div class="col-md-6 col-xs-12 mt-3">
         <div class="card">
-          <div class="card-header">Укажите аннотацию на 3х языках</div>
-          <div class="card-body">
-            <div class="mb-3">
-              <label for="annotationRu" class="form-label"
-                >Аннотация рус.</label
-              >
-              <textarea
-                class="form-control"
-                placeholder="Аннотация к вашей статье рус."
-                id="annotationRu"
-                required
-              ></textarea>
-              <div class="invalid-feedback">Необходимо заполнить</div>
-            </div>
-            <div class="mb-3">
-              <label for="annotationKZ" class="form-label"
-                >Аннотация каз.</label
-              >
-              <textarea
-                class="form-control"
-                placeholder="Аннотация к вашей статье каз."
-                id="annotationKZ"
-                required
-              ></textarea>
-              <div class="invalid-feedback">Необходимо заполнить</div>
-            </div>
-            <div class="mb-3">
-              <label for="annotationEng" class="form-label"
-                >Аннотация англ.</label
-              >
-              <textarea
-                class="form-control"
-                placeholder="Аннотация к вашей статье англ."
-                id="annotationEng"
-                required
-              ></textarea>
-              <div class="invalid-feedback">Необходимо заполнить</div>
-            </div>
+          <div class="card-header">
+            <h4 class="text-center">
+              <b>Укажите ключевые слова на 3х языках</b>
+            </h4>
           </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-xs-12 mt-3">
-        <div class="card">
-          <div class="card-header">Укажите ключевые слова на 3х языках</div>
           <div class="card-body">
             <div class="mb-3">
               <label for="keyWordsRu" class="form-label"
@@ -138,6 +110,56 @@
                 Укажите ключевые слова через точку с запятой, например:
                 информатика; программирование
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 mt-3">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">
+              <b>Укажите аннотацию на 3х языках</b>
+            </h4>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="annotationRu" class="form-label"
+                >Аннотация рус.</label
+              >
+              <textarea
+                rows="10"
+                class="form-control"
+                placeholder="Аннотация к вашей статье рус."
+                id="annotationRu"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="annotationKZ" class="form-label"
+                >Аннотация каз.</label
+              >
+              <textarea
+                rows="10"
+                class="form-control"
+                placeholder="Аннотация к вашей статье каз."
+                id="annotationKZ"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
+            </div>
+            <div class="mb-3">
+              <label for="annotationEng" class="form-label"
+                >Аннотация англ.</label
+              >
+              <textarea
+                rows="10"
+                class="form-control"
+                placeholder="Аннотация к вашей статье англ."
+                id="annotationEng"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Необходимо заполнить</div>
             </div>
           </div>
         </div>
