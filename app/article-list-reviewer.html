@@ -1,0 +1,130 @@
+<!--#include virtual="/parts/header.html" -->
+
+<main class="pt-3 pb-3">
+  <div class="container">
+    <!--#include virtual="/parts/breadcrumb.html" -->
+    <h1 class="text-center">Cтатьи</h1>
+    <div class="row">
+      <table class="table table-striped table-bordered">
+        <colgroup>
+          <col width="30" />
+          <col width="400" />
+          <col width="100" />
+          <col width="100" />
+          <col width="50" />
+          <col width="20" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Статья</th>
+            <th>
+              <a
+                class="desc"
+                href="/web/profile/view?id=174&amp;sort=date_create"
+                data-sort="date_create"
+                >Дата подачи</a
+              >
+            </th>
+            <th>Категория</th>
+            <th>Статус</th>
+            <th>Решение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Внести решения
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Внесение решения</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xs-12">
+              <form class="row needs-validation" novalidate>
+                <input type="hidden" value="article_id" name="article_id" />
+                <!-- <div class="input-group mb-3">
+                  <label class="input-group-text" for="receipt"
+                    >Антиплагиат</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="receipt"
+                    placeholder="Прикрепите антиплагиат"
+                    required
+                  />
+                  <input type="hidden" value="article_id" name="article_id" />
+                  <div class="invalid-feedback">Необходимо прикрепить</div>
+                </div> -->
+                <div class="col-xs-12">
+                  <button
+                    style="width: 100%"
+                    type="submit"
+                    class="btn mt-2 btn-primary"
+                  >
+                    Сохранить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Отмена
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
