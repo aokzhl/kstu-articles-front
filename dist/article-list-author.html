@@ -242,18 +242,14 @@
               <a href="#" class="btn btn-warning disabled">На проверке</a>
             </td>
             <td>
-              <a href="/web/data/update?id=81" class="btn btn-info"
+              <a href="./article-details-author.html" class="btn btn-info"
                 ><i class="fas fa-pen"></i></span
               ></a>
             </td>
             <td>
-              <a
-              
-                class="btn btn-danger"
-                href="/web/web/data/delete?id=81"
-                data-confirm="Вы уверены? Вы точно хотите удалить статью?"
-                data-method="post"
-              ><i class="fas fa-trash"></i></a>
+              <button class="btn btn-danger ms-1" data-bs-toggle="modal" data-bs-target="#confirm-delete">
+                <i class="fas fa-trash"></i>
+            </button>
             </td>
           </tr>
         </tbody>
@@ -262,6 +258,20 @@
   </div>
 </main>
 
+<div class="modal fade" id="confirm-delete" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Удалить статью?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+        <a type="button" href="delte/href/1" class="btn btn-danger">Удалить</a>
+      </div>
+    </div>
+  </div>
+</div>
 	<script src="js/app.min.js"></script>
 
 </body>

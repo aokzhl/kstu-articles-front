@@ -77,16 +77,20 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   if (form && modalCloseBtns.length && modalOpenBtns.length)
     modalOpenBtns.forEach((el) => {
-      el.addEventListener("click", (e) => {
-        hiidenId.value = e.target.dataset.id;
-        console.log(e);
-      });
+      if (hiidenId) {
+        el.addEventListener("click", (e) => {
+          hiidenId.value = e.target.dataset.id;
+          console.log(e);
+        });
+      }
     });
   modalCloseBtns.forEach((el) => {
     el.addEventListener("click", (e) => {
-      hiidenId.value = null;
-      console.log("close");
-      form.reset();
+      if (hiidenId) {
+        hiidenId.value = null;
+        console.log("close");
+        form.reset();
+      }
     });
   });
   const hiidenId = document.querySelector("input[type=hidden]");
