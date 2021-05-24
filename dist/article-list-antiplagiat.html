@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light"
+        style="background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../page.html" class="nav-link" href="#">О журнале</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li> -->
+              <li class="nav-item">
+                <a
+                  href="../page.html"
+                  class="nav-link"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Редакция</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../page.html"
+                  class="nav-link"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Авторы</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../page.html"
+                  class="nav-link"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Архив</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../page.html"
+                  class="nav-link"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Akzhol
+              </button>
+              <ul
+                class="
+                  dropdown-menu dropdown-menu-sm-start dropdown-menu-md-end
+                "
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a class="dropdown-item" href="../article-form.html"
+                    >Подать стаью</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    href="../article-list-author.html"
+                    >Мои статьи</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <a href="../login.html" type="button" class="btn btn btn-primary"
+                >Войти</a
+              >
+
+              <a href="../register.html" type="button" class="btn btn"
+                >Регистрация</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+
+
+<main class="pt-3 pb-3">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+    <h1 class="text-center">Cтатьи</h1>
+    <div class="row">
+      <table class="table table-striped table-bordered">
+        <colgroup>
+          <col width="30" />
+          <col width="400" />
+          <col width="100" />
+          <col width="100" />
+          <col width="50" />
+          <col width="20" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Статья</th>
+            <th>
+              <a
+                class="desc"
+                href="/web/profile/view?id=174&amp;sort=date_create"
+                data-sort="date_create"
+                >Дата подачи</a
+              >
+            </th>
+            <th>Категория</th>
+            <th>Статус</th>
+            <th>Антиплагиат</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="2"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+          <tr data-key="81">
+            <td>1</td>
+            <td>
+              <a
+                style="overflow-wrap: break-word"
+                href="/web/profile/data-info?id=81"
+                title="Пример: Аспекты разработки современного WEB-приложения"
+                data-toggle="modal"
+                data-target="#modalinfo81"
+                >Аспекты разработки современного WEB-приложения .</a
+              >
+            </td>
+            <td>2021-04-08 14:57:51</td>
+            <td>2021-04-08 14:57:51</td>
+            <td>
+              <a href="#" class="btn btn-warning disabled">На проверке</a>
+            </td>
+            <td>
+              <button
+                type="button"
+                data-id="1"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Зарузить
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Загрузка антиплагиата
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xs-12">
+              <form class="row needs-validation" novalidate>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="receipt"
+                    >Антиплагиат</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="receipt"
+                    placeholder="Прикрепите антиплагиат"
+                    required
+                  />
+                  <input type="hidden" value="article_id" name="article_id" />
+                  <div class="invalid-feedback">Необходимо прикрепить</div>
+                </div>
+                <div class="col-xs-12">
+                  <button
+                    style="width: 100%"
+                    type="submit"
+                    class="btn mt-2 btn-primary"
+                  >
+                    Сохранить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Отмена
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
